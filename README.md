@@ -7,9 +7,3 @@ Requirements:
  -html
  -css
  -javascript
-
- Jean blanc
-
- Kellog's de la planete terre
-
- Kellog'S GNAMGNAGNAAAAAAAAAAMMMMMMMMM
