@@ -1,6 +1,6 @@
 # RestaurantWebsite
-Design a complete website from scratch html, css, javascript
-Add two blank spaces at the end of the line to display text in column
+Design a complete website from scratch html, css, javascript  
+Add two blank spaces at the end of the line to display text in column  
 
 Requirements:  
  - Python 3.  
