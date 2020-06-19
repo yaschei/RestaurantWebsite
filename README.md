@@ -1,12 +1,11 @@
 # RestaurantWebsite
 Design a complete website from scratch html, css, javascript
+Add two blank spaces at the end of the line to display text in column
 
 Requirements:  
  - Python 3.  
  - Flask to emulate application (application.py)  
- - html
- - css
- - javascript
+ - html-css-javascript
  
 Installation on local PC  
 Ubuntu 20.04LTS  
