@@ -10,9 +10,9 @@ Requirements:
  
 Installation on local PC  
 Ubuntu 20.04LTS  
- -sudo apt-get install python3-venv #if not installed  
- -cd workdirectory/  
- -python3 -m venv xvenv  
+ - sudo apt-get install python3-venv #if not installed  
+ - cd workdirectory/  
+ - python3 -m venv xvenv  
  - . xvenv/bin/activate  
  -pip install Flask  
  -export FLASK_APP=application.py  
