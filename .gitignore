@@ -1,3 +1,3 @@
-
+*.pyc
 __pycache__/
-xvenv/
+__xvenv__/
