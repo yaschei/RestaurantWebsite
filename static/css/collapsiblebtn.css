@@ -26,20 +26,14 @@
   background-color: #262626;
 }
 
-
-@media (max-width:1000px) {
-  .logoEnt {
-    position:relative;
-    left:-99999px;
-    visibility: hidden;
-    display: none;
-  }
-
+.logoEnt {
+  vertical-align:middle;
+  height: 30px;
 }
+
 
 @media screen and (max-width: 860px) {
   .logoEnt {
-
     visibility: hidden;
     display: none;
   }
