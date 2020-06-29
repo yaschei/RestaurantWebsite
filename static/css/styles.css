@@ -35,7 +35,7 @@ h3 {
   font-weight: normal;
 }
 
-p {
+p,li {
   font-size: 12pt;
   font-style: normal;
 }
@@ -126,9 +126,26 @@ p {
   .navbar-brand h1 {
     font-size: 18px;
   }
+
 }
 
 @media screen and (max-width: 860px) {
+  h1{
+    font-size: 18pt;
+  }
+
+  h2{
+    font-size: 16pt;
+  }
+
+  h3 {
+    font-size: 13pt;
+  }
+
+  p,li {
+    font-size: 11pt;
+  }
+
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: left;
@@ -153,6 +170,22 @@ p {
 }
 
 @media screen and (max-width: 650px) {
+  h1{
+    font-size: 16pt;
+  }
+
+  h2{
+    font-size: 14pt;
+  }
+
+  h3 {
+    font-size: 12pt;
+  }
+
+  p,li {
+    font-size: 11pt;
+  }
+
   #logoImg{
     background-size: contain;
     width: 75px;/* set logo dimension */
@@ -175,6 +208,21 @@ p {
 }
 
 @media screen and (max-width:460px) {
+  h1{
+    font-size: 14pt;
+  }
+
+  h2{
+    font-size: 13pt;
+  }
+
+  h3 {
+    font-size: 10pt;
+  }
+  p,li {
+    font-size: 9pt;
+  }
+
   #logoImg{
     visibility: hidden;
     display: none;
@@ -188,6 +236,20 @@ p {
 }
 
 @media screen and (max-width:400px) {
+  h1{
+    font-size: 12pt;
+  }
+
+  h2{
+    font-size: 11pt;
+  }
+
+  h3 {
+    font-size: 10pt;
+  }
+  p,li {
+    font-size: 9pt;
+  }
   .navbar-brand h1 {
     font-size: 12px;
   }
@@ -197,6 +259,21 @@ p {
 }
 
 @media (max-width:360px) {
+  h1{
+    font-size: 11pt;
+  }
+
+  h2{
+    font-size: 10pt;
+  }
+
+  h3 {
+    font-size: 9pt;
+  }
+  p,li {
+    font-size: 8pt;
+  }
+
   .navbar-brand h1 {
     font-size: 10px;
   }
