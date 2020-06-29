@@ -1,4 +1,4 @@
-# RestaurantWebsite
+# WebsiteDevFlask  
 Design a complete website from scratch html, css, javascript  
 Add two blank spaces at the end of the line to display text in column  
 
@@ -14,5 +14,8 @@ Ubuntu 20.04LTS
  - python3 -m venv xvenv  
  - . xvenv/bin/activate  
  - pip install Flask  
- - export FLASK_APP=application.py  
+ - export FLASK_APP=flask_app.py  
  - flask run  
+
+Run application:  
+ - PythonEverywhere 

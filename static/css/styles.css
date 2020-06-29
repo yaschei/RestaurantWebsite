@@ -128,7 +128,7 @@ p {
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 860px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: left;
