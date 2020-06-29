@@ -40,14 +40,18 @@
 
 @media screen and (max-width: 860px) {
   .collapsible img {
-    height: 20px;
+    /* height: 20px; */
+    visibility: hidden;
+    display: none;
   }
 }
 
 
 @media screen and (max-width: 650px) {
   .collapsible img {
-    height: 14px;
+    /* height: 14px; */
+    visibility: hidden;
+    display: none;
   }
 
 }
