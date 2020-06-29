@@ -26,12 +26,8 @@
   background-color: #262626;
 }
 
-.logoEnt {
-    height: 10px;
-  }
 
-
-/* @media (max-width:1000px) {
+@media (max-width:1000px) {
   .logoEnt {
     position:relative;
     left:-99999px;
@@ -39,29 +35,29 @@
     display: none;
   }
 
-} */
+}
 
-/* @media screen and (max-width: 860px) {
+@media screen and (max-width: 860px) {
   .logoEnt {
 
     visibility: hidden;
     display: none;
   }
-} */
+}
 
 
-/* @media screen and (max-width: 650px) {
+@media screen and (max-width: 650px) {
   .logoEnt {
 
     visibility: hidden;
     display: none;
   }
 
-} */
-/* @media screen and (max-width:460px) {
+}
+@media screen and (max-width:460px) {
   .logoEnt {
     visibility: hidden;
     display: none;
   }
 
-} */
+}
