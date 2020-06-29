@@ -31,38 +31,37 @@
   }
 
 
-@media (max-width:1000px) {
+/* @media (max-width:1000px) {
   .logoEnt {
-    /* height: 30px; */
     position:relative;
     left:-99999px;
     visibility: hidden;
     display: none;
   }
 
-}
+} */
 
-@media screen and (max-width: 860px) {
+/* @media screen and (max-width: 860px) {
   .logoEnt {
-    /* height: 20px; */
+
     visibility: hidden;
     display: none;
   }
-}
+} */
 
 
-@media screen and (max-width: 650px) {
+/* @media screen and (max-width: 650px) {
   .logoEnt {
-    /* height: 14px; */
-    visibility: hidden;
-    display: none;
-  }
 
-}
-@media screen and (max-width:460px) {
-  .logoEnt {
     visibility: hidden;
     display: none;
   }
 
-}
+} */
+/* @media screen and (max-width:460px) {
+  .logoEnt {
+    visibility: hidden;
+    display: none;
+  }
+
+} */
