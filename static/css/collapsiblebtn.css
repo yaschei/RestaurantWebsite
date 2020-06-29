@@ -15,10 +15,6 @@
   font-weight: bold;
 }
 
-.logoEnt {
-    height: 30px;
-  }
-
 .active, .collapsible:hover {
   background-color: #777;
 }
@@ -30,10 +26,18 @@
   background-color: #262626;
 }
 
+.logoEnt {
+    height: 30px;
+  }
+
 
 @media (max-width:1000px) {
   .logoEnt {
-    height: 30px;
+    /* height: 30px; */
+    position:relative;
+    left:-99999px;
+    visibility: hidden;
+    display: none;
   }
 
 }
