@@ -13,3 +13,7 @@ def about():
 @app.route('/contact', methods=['POST','GET'])
 def contact():
     return render_template("contact.html")
+
+@app.route('/acknowledgments', methods=['POST','GET'])
+def acknowledgments():
+    return render_template("acknowledgments.html")
