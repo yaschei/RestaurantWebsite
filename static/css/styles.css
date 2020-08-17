@@ -1,25 +1,16 @@
-*{
-  border: 0;
-  padding: 0;
-  margin: 0;
+* {
+  box-sizing: border-box;
   font-family: "cmunss";
   src: url("../static/fonts/cmunss.ttf") format("truetype");
-  color: #CEBEAC;
-}
-
-html {
   line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* color: #CEBEAC; */
 }
 
 body {
-  margin-left: 40px;
-  margin-right: 40px;
-  text-align: justify;
-  background: #1E1E27;
+  /* font-family: Arial; */
+  padding: 10px;
+  background: #f1f1f1;
 }
-
 h1{
   font-size: 25pt;
   font-weight: bold;
@@ -40,49 +31,41 @@ p,li {
   font-style: normal;
 }
 
-#navbar
-{/* set navbar id */
-  display: flex; /* enables flex context allow navbar to expand around all element inside navbar*/
-  margin-bottom: 20px; /* give space outside navbar on bottom */
-  margin-left: -40px; /* overwrite default body margin */
-  margin-right: -40px; /* overwrite default body margin */
-  background: #262626; /* set background color */
-  /*border-bottom-left-radius: 25px; /* set border-bottom-left round */
-  /*border-bottom-right-radius: 25px; /* set border-bottom-left round */
-  /*box-shadow: 0px 10px 13px -7px #111111, 0px 10px 10px -3px rgba(17, 17, 17,0); /* set shadow compatibility #hexa, rgb */
-  /*-ms-box-shadow: 0px 10px 13px -7px #111111, 0px 10px 10px -3px rgba(17, 17, 17,0); /* set shadow compatibility #hexa, rgb, microsoft */
-  /*-webkit-box-shadow: 0px 10px 13px -7px #111111, 0px 10px 10px -3px rgba(17, 17, 17,0); /* set shadow compatibility #hexa, rgb, chrome */
-  /*-moz-box-shadow: 0px 10px 13px -7px #111111, 0px 10px 10px -3px rgba(17, 17, 17,0); /* set shadow compatibility #hexa, rgb, mozilla */
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
 }
 
-.navbar-container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+.header h1 {
+  font-size: 50px;
 }
 
+/* Style the top navigation bar */
 .topnav {
-  padding-top: 25px;
-  padding-bottom: 10px;
-  display: inline-block;
-  float: right;
+  overflow: hidden;
+  background-color: #333;
 }
 
+/* Style the topnav links */
 .topnav a {
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 5px 7px;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
 }
 
+/* Change color on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
 }
 
 .topnav a.active {
@@ -93,81 +76,96 @@ p,li {
   display: none;
 }
 
-#logoImg
-{ /* set website logo id */
-  background: url('/static/img/logo160x160px.png') no-repeat; /* set logo as background unique logo */
-  float: left; /* position logoImg on the left in the container */
-  width: 150px;/* set logo dimension */
-  height: 104px;
-  margin: 10px 0px 10px 0px;/* set margin around: top right bottom left */
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
 }
 
-.navbar-brand
-{ /* set website brand name */
-  display: inline-block; /* display in the text with space top and bottom */
-  padding-top: 25px; /* set space around an element */
-  padding-bottom: 10px;
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
 }
 
-.navbar-brand h1
-{ /* replace h1 properties in navbar */
-  font-size: 20pt;
-  text-transform: uppercase;
-  /* color: white */
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
 }
 
-.navbar-brand a, a:hover
-{ /* remove text-decoration for nav-brand link a */
-  text-decoration: none;
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
 }
 
-
-@media (max-width:1000px) {
-  .navbar-brand h1 {
-    font-size: 18px;
-  }
-
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-@media screen and (max-width: 860px) {
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
   h1{
-    font-size: 18pt;
+   font-size: 18pt;
+ }
+
+ h2{
+   font-size: 16pt;
+ }
+
+ h3 {
+   font-size: 13pt;
+ }
+
+ p,li {
+   font-size: 11pt;
+ }
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
   }
 
-  h2{
-    font-size: 16pt;
-  }
+}
 
-  h3 {
-    font-size: 13pt;
-  }
-
-  p,li {
-    font-size: 11pt;
-  }
+@media screen and (max-width: 750px) {
 
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
-    float: left;
+    float: right;
     display: block;
   }
-  .topnav.responsive {
-    position: relative;
-    right: 25px;
-    top: 0px;
-  }
+}
+
+@media screen and (max-width: 750px) {
+  .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
-    /* float: right; */
-    right: -25px;
-    top: 25px;
+    right: 0;
+    top: 0;
   }
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
-}
+
 
 @media screen and (max-width: 650px) {
   h1{
@@ -186,25 +184,6 @@ p,li {
     font-size: 11pt;
   }
 
-  #logoImg{
-    background-size: contain;
-    width: 75px;/* set logo dimension */
-    height: 54px;
-    /* margin: 10px 0px 10px 0px;/* set margin around: top right bottom left */ */
-  }
-  .navbar-brand {
-    padding-top: 15px; /* set space around an element */
-  }
-  .navbar-brand h1 {
-    font-size: 16px;
-  }
-  .topnav {
-    padding-top: 15px;
-  }
-  .topnav.responsive .icon {
-    right: -25px;
-    top: 15px;
-  }
 }
 
 @media screen and (max-width:460px) {
@@ -221,14 +200,6 @@ p,li {
   }
   p,li {
     font-size: 9pt;
-  }
-
-  #logoImg{
-    visibility: hidden;
-    display: none;
-  }
-  .navbar-brand h1 {
-    font-size: 14px;
   }
   .topnav a {
     font-size: 14px;
@@ -250,15 +221,17 @@ p,li {
   p,li {
     font-size: 9pt;
   }
-  .navbar-brand h1 {
-    font-size: 12px;
-  }
   .topnav a {
     font-size: 12px;
   }
+  /* .topnav a {
+    float: none;
+    width: 100%;
+    font-size: 12px;
+  } */
 }
 
-@media (max-width:360px) {
+@media  screen and (max-width:360px) {
   h1{
     font-size: 11pt;
   }
@@ -272,10 +245,6 @@ p,li {
   }
   p,li {
     font-size: 8pt;
-  }
-
-  .navbar-brand h1 {
-    font-size: 10px;
   }
   .topnav a {
     font-size: 10px;

@@ -1,73 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MappleEngin</title>
+    <title>NorthernOrca</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- <link rel="stylesheet" href="/static/css/card.css"/> PROBLEME INTERFERENCE AVEC .CARD -->
+    <link rel="stylesheet" href="/static/css/slideshow.css"/>
+    <link rel="stylesheet" href="/static/css/collapsiblebtn.css"/>
+    <link rel="stylesheet" href="/static/css/contactus.css"/>
+    <link rel="stylesheet" href="/static/css/styles.css"/>
   </head>
-  <!-- <link rel="stylesheet" href="/static/css/bootstrap.css"></link> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/static/css/card.css"></link>
-  <link rel="stylesheet" href="/static/css/slideshow.css"></link>
-  <link rel="stylesheet" href="/static/css/collapsiblebtn.css"></link>
-  <link rel="stylesheet" href="/static/css/styles.css"></link>
-
   <body>
 
-    <header>
-      <!-- create navigation bar -->
-      <!-- styles.css id navbar -->
-      <nav id="navbar">
-        <div class="navbar-container">  <!-- defines a division or a section -->
-          <div>
+    <div class="header">
+      <h1>Northern Orca</h1>
+      <p>Resize the browser window to see the effect.</p>
+    </div>
 
-            <a href="/" class="">
-              <div id="logoImg" alt="Logo"></div>
-            </a>
-
-            <div class="navbar-brand"> <!-- styles.css & bootstrap navbar-brand -->
-              <a href="/" >
-                <h1>Maple Engineering</h1>
-              </a>
-              <!-- <p><span style="color: white">Certified</span></p>  element used to color a part of a text -->
-            </div>
-
-            <div class="topnav" id="myTopnav">
-              <a href="/" class="active">Home</a>
-              <a href="#news">News</a>
-              <a href="/about">About</a>
-              <a href="/contact">Contact</a>
-              <a href="/acknowledgments">Acknowledgments</a>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-            </div>
-
-          </div>
-        </div>
-
-      </nav>
-
-    </header>
+    <div class="topnav" id="myTopnav">
+      <a href="/" class="active">Home</a>
+        <a href="/services">Services</a>
+        <a href="/publications">Publications</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/acknowledgments">Acknowledgments</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
     {% block body %}
     {% endblock %}
+
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+
 
     <script type="text/javascript" src="static/js/topnavbar.js"></script>
     <script type="text/javascript" src="static/js/slideshow.js"></script>
     <script type="text/javascript" src="static/js/flipcard.js"></script>
     <script type="text/javascript" src="static/js/collapsiblebtn.js"></script>
 
-    <br>
-    <br>
-    <br>
-    <nav id="navbar">
-      <div class="navbar-container">
-        <br>
-        <br>
-        <br>
-      </div>  <!-- defines a division or a section -->
-    </div>
   </body>
-
 </html>

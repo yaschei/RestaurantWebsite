@@ -6,6 +6,14 @@ app = Flask(__name__, static_url_path='/static')
 def index():
     return render_template("index.html")
 
+@app.route('/services', methods=['POST','GET'])
+def services():
+    return render_template("services.html")
+
+@app.route('/publications', methods=['POST','GET'])
+def publications():
+    return render_template("publications.html")
+
 @app.route('/about', methods=['POST','GET'])
 def about():
     return render_template("resume.html")

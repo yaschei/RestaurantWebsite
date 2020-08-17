@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="card">
+  <h2>COMING SOON</h2>
+  <h5>Title description,
+      <span id="datetime"></span><script>var dt = new Date();
+    document.getElementById("datetime").innerHTML=dt.toLocaleString();</script>
+  </h5>
+  <div class="fakeimg" style="height:200px;">Image</div>
+  <p>Sorry, this page is not available now</p>
+  <p>Thank you</p>
+</div>
+
+
+{% endblock %}
