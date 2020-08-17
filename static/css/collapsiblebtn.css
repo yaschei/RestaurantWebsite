@@ -15,6 +15,7 @@
 }
 
 .content {
+  color: white;
   padding: 10px 18px;
   display: none;
   overflow: hidden;
@@ -35,7 +36,7 @@
 }
 
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 750px) {
   .logoEnt {
     visibility: hidden;
     display: none;
